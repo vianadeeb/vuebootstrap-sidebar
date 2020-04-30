@@ -1,7 +1,9 @@
 <template>
   <div class="application">
     <div class="application__sidebar">
-      <img src="../assets/img/delivery.png" width="50px" height="50px" style="border-radius: 50%;margin-top:10px;"  />
+      <router-link to="/">
+     <span class="logosty"><i class="fas fa-truck"></i>  </span>
+      </router-link>
       <router-link
         v-for="(link, index) in links"
         :key="index"
@@ -78,7 +80,10 @@ export default {
 .application__sidebar {
   height: 100%;
   width: 100px;
-  background: #413c69;
+  background: #4c92f3;
+   /* background: #4F6BF0; */
+   /* background: #2371dd; */
+   /* background: #008EFF; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +102,7 @@ export default {
   height: 100px;
   justify-content: center;
   align-items: center;
-  color: #aba8cd;
+  color: #fff;
   transition: 0.4s ease-in-out;
   border-right: 5px solid transparent;
 }
@@ -128,5 +133,10 @@ export default {
 }
 .application__sidebar_item:hover {
 text-decoration: none;
+}
+.logosty{
+  color: white;
+  font-size: 30px;
+  margin-top: 5px;
 }
 </style>

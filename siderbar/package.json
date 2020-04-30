@@ -1,5 +1,5 @@
 {
-  "name": "vian",
+  "name": "dlivery",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "bootstrap-vue": "^2.1.0",
+    "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
+    "hchs-vue-charts": "^1.2.8",
     "vue": "^2.6.11",
+    "vue-headful": "^2.1.0",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {
